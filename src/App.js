@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Content from './content/Content';
+import Namecard from './namecard/Namecard'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="grid grid-cols-3">
+        <div className="flex col-span-2 items-center flex-col">
+          <Content />
+        </div>
+        <div className="grid col-span-1 h-screen fixed left-2/3">
+          <Namecard />
+        </div>
+      </div>
     </div>
   );
 }
