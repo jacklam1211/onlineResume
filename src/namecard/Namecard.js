@@ -1,6 +1,6 @@
 function Namecard(){
     return <div className="flex flex-col items-center justify-center">
-        <img className="object-cover h-90 w-90" src="./icon.png" alt='icon'/>
+        <img className="object-cover h-30 w-30 lg:h-90 lg:w-90" src="./icon.png" alt='icon'/>
         <div className="flex m-2 gap-2">
             <p className="text-xl">Reach Me at:</p>
             <a href="https://github.com/jacklam1211">
